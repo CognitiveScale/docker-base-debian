@@ -5,7 +5,7 @@ FROM debian:jessie
 MAINTAINER Indy Beck indy@c12e.com
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y python-software-properties && \
+RUN apt-get update && apt-get install -y python-software-properties software-properties-common && \
   add-apt-repository ppa:webupd8team/java && \
   add-apt-repository ppa:brightbox/ruby-ng-experimental && \
   add-apt-repository ppa:chris-lea/node.js && \
